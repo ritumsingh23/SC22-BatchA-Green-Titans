@@ -20,7 +20,6 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ms-1"></i>
@@ -41,7 +40,7 @@
             <div class="container">
                 <div class="masthead-subheading">Welcome To Our Website!</div>
                 <div class="masthead-heading text-uppercase">Cost of Living</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+                <!--<a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>-->
             </div>
         </header>
         <!-- EDA-->
@@ -53,41 +52,33 @@
                 </div>
                 <div class="row text-center">
                   <!--First Plot-->
-                    <span class="fa-stack fa-4x">
-                    </span>
-                  <!--<center><img src="plot.png" alt="Cost of living Vs City"style="width:1200px;height:600px;"  class="center"></center>-->
                   <iframe width='650' height='650' src='Cost_of_living_VS_City.html'></iframe>
 
                     <h4 class="my-3">Cost of Living Vs Rent Index</h4>
                     <p class="text-muted">This graph shows the correlation of the cities and their rent index. </p>
                   <!--Second Plot-->
-                    <span class="fa-stack fa-4x">
-                    </span>
-                  <center><img src="scatter.png" alt="Scatter Matrix" style="width:1200x;height:600px;" class="center"></center>
+                  <iframe width='650' height='650' src='Scatter_Matrix.html'></iframe>
+
                     <h4 class="my-3">Scatter Matrix</h4>
-                    <p class="text-muted"> This Graph shows the correlation between different values in scatter form. </p>
-                     
+                    <p class="text-muted"> This graph shows the correlation between different values in these cities. Different combinations will result in a positive or negative result, depending on the city. </p>
                   <!--Third Plot-->
                     <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Web Security</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                      <iframe width='650' height='650' src='Correlation_plot.html'></iframe>
+
+                        <h4 class="my-3">Heatmap</h4>
+                        <p class="text-muted">This heatmap shows the </p>
                     </div>
                   <!--Forth Plot-->
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Web Security</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                   <iframe width='650' height='650' src='First_costofliving.html'></iframe>
+
+                    <h4 class="my-3">Cost of Living Vs Rent Index</h4>
+                    <p class="text-muted">This graph shows the correlation of the cities and their rent index. </p><div class="col-md-4">
                     </div>
                 </div>
             </div>
         </section>
+
+<!---------------------------------------Models--------------------------------------------->
         <!-- Portfolio Grid-->
         <section class="page-section bg-light" id="portfolio">
             <div class="container">
@@ -95,18 +86,14 @@
                     <h2 class="section-heading text-uppercase">Machine Learning Models</h2>
                     <h3 class="section-subheading text-muted">More about the models we tested.</h3>
                 </div>
-              <!--David: Decsion Tree-->
+              <!--David: Decsion Tree------------------------------------------------------->
                 <div class="row">
-                    <div class="col-lg-6 col-md-8 mb-4">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-                                <div class="portfolio-hover">
+                    <div>
+                      <h1 style="color:black">Decision Tree</h1>
+                                <!--<div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
+                                </div>-->
                                 <img class="img-fluid" src="1-Figure1-1.png" alt="..." width="500" height="600">
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Decision Tree</div>
                                 <div class="portfolio-caption-subheading text-muted">David Zimmermann</div>
                               <h2>
                                 History:
@@ -115,74 +102,70 @@
                               <h2>
                                 How it Works:
                               </h2>
-                              <p2>dfdfsd</p2>
+                              <p2>A decision tree is a type of supervised machine learning used to categorize or make predictions based on how a previous set of questions were answered. The model is a form of supervised learning, meaning that the model is trained and tested on a set of data that contains the desired categorization.</p2>
                               <h2>
-                                Pros and Cons:
+                              Pros and Cons:
                               </h2>
-                              <p2>dsfsfd</p2>
-                              <h2>
+                                <h3>
+                                  Pros:
+                                </h3>
+                            <p2>
+<li> It requires less time to get the data prepared for it.</li>
+<li>The data doesn't have to be normalized </li>
+<li>No scaling is needed for a decision tree</li>
+<li>Easy to explain</li>
+                           </p2>
+                                 <h3>
+                                  Cons:
+                                </h3>
+                            <p2>
+<li>A small change in data can affect it on a large scale</li>
+<li>The decision tree can give too complex answers</li>
+<li>The tree can take a long amount of time to calculate</li>
+<li>The Decision tree does not work very well with regression and can often over fit</li>
+                           </p2>
+                                <h2>
                                 Hyper Parameters:
                               </h2>
-                              <p2>dfsdf</p2>
+                              <p2>For the Hyper Parameters there were many parmeters but the most important on was random state. Random state provided the values for he model</p2> 
                               <h2>
                                 Outcome:
                               </h2>
-                              <p2>rthrt</p2>
-                            </div>
-                        </div>
-                    </div>
+                              <p2> The values we gathered from the Decision Tree were:
+                              <li>Train value-</li></p2>
+                              </div>
+                              </div>
                         <!-- Portfolio item 2-->
-                      <!-- Katherine: SVR-->
-                      <div class="col-lg-6 col-md-8 mb-4">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-                                <div class="portfolio-hover">
+              <!-- Katherine: SVR----------------------------------------------------------------->
+                      <!--<div class="col-lg-6 col-md-8 mb-4">-->
+                        <div>
+                          <h1>Support Vector Regression</h1>
+                                <!--<div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
+                                </div>-->
                                 <img class="img-fluid" src="Svr_example.png" alt="..." width="500" height="800">
-                            </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Support Vector Regression (SVR)</div>
                                 <div class="portfolio-caption-subheading text-muted">Katherine Xie</div>
-  <h2>
-  History:
-</h2>
-<p2>
-This machine learning model was invented by Vladimir N. Vapnik and Alexey Ya. Chervonenkis in 1963
-</p2>
+                                <h2>History:</h2>
+                                <p2>This machine learning model was invented by Vladimir N. Vapnik and Alexey Ya. Chervonenkis in 1963</p2>
 
-<h2>
-  How it Works:
-</h2>
-<p>
-  SVR is a supervised machine learning algorithm that can be used for classification and regression. It finds a hyperplane that divides a data set into different classes. The goal for this method would be to choose a plane with the greatest margin between the hyperplane and a data point.
-</p>
-                            <h2>
-  Pros and Cons:
-</h2>
-                              <h2>Pros:</h2>
-                          <li>Thrives in High Dimension</li>
-                          <li>Support Vector Machines are all about choosing the right kernel with the right parameters and this can provide lots of flexibility</li>
-                          <li>Fast Prediction</li>
-                          <li>SVMs can be used to both classify data and also predict continuous numerical values</li>
-                        
-                        <h2>
-                          Cons:
-                              </h2>
-                          <li>Not good for big datasets because training will take a long time</li>
-                          <li>Less effective on messsy data sets with overlapping classe</li>
-                          <li>SVMs are not the most efficient algorithms and it can be quite costly computationally to train them</li>  
-                          <li>Can be hard to interpret</li>
-                          <li>Have to scale data</li>
-                        <h2>
-  Hyper Parameters:
-</h2>
-                            <p>
-  Fine tuning our hyper parameters was essential in order for our model to produce the most optimal results.
-</p>
-<p2>
-  We found that the best hyper parameters were:
-</p2>
+                                <h2>How it Works:</h2>
+                                <p>SVR is a supervised machine learning algorithm that can be used for classification and regression. It finds a hyperplane that divides a data set into different classes. The goal for this method would be to choose a plane with the greatest margin between the hyperplane and a data point.</p>
+                                <h2>Pros and Cons:</h2>
+                                <h3>Pros:</h3>
+                                <li>Thrives in High Dimension</li>
+                                <li>Support Vector Machines are all about choosing the right kernel with the right parameters and this can provide lots of flexibility</li>
+                                <li>Fast Prediction</li>
+                                <li>SVMs can be used to both classify data and also predict continuous numerical values</li>
+                                <h3>Cons:</h3>
+                                  <li>Not good for big datasets because training will take a long time</li>
+                                  <li>Less effective on messsy data sets with overlapping classe</li>
+                                  <li>SVMs are not the most efficient algorithms and it can be quite costly computationally to train them</li>
+                                  <li>Can be hard to interpret</li>
+                                  <li>Have to scale data</li>
+                              <h2>Hyper Parameters:</h2>
+                            <p>Fine tuning our hyper parameters was essential in order for our model to produce the most optimal results.</p>
+<p2>We found that the best hyper parameters were:</p2>
 <p3 style="color:orange">
   SVR(kernel='rbf', gamma='scale', tol=0.001, C=100)
 </p3>
@@ -208,39 +191,34 @@ This machine learning model was invented by Vladimir N. Vapnik and Alexey Ya. Ch
                         </div>
                     </div>
                         <!-- Portfolio item 3-->
-                      <!--Sophia: Random Forest-->
-                                            <div class="col-lg-6 col-md-8 mb-4">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-                                <div class="portfolio-hover">
+               <!--Sophia: Random Forest---------------------------------------------------------->
+                  <div>
+                    <h1>Random Forest</h1>
+                                <!--<<div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
+                                </div>-->
                                 <img class="img-fluid" src="Random_forest_diagram_complete.png" alt="..." width="500" height="600">
-                            </a>
                           <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Random Forest</div>
                                 <div class="portfolio-caption-subheading text-muted">Sophia Mu</div>
-                       
                        <h2>History:</h2>
                       <p>Made by Tin Kam Ho in 1995
-                       
-                        <body style="background-color:silver">
+                       <body style="background-color:silver">
                         <h2>How it Works:</h2>
                         <p>Random forest is a machine learning model. This model uses many decision trees to put in the input and calculate the output based on the mean or mode of the predictions made by the decision trees. </p>
                         <h2>Pros and Cons:</h2>
-                        <h2>Pros:
-                          </h2>
+                        <h3>Pros:
+                          </h3>
                           <li>can be used for classification and regression</li>
                           <li>works well with non-linear data</li>
                           <li>works efficiently with large datasets</li>
                           <li>has a higher level of accuracy compared to decision tree</li>
                           <li>has many parameters</li>
-                        
-                          <h2>Cons:</h2>
+
+                          <h3>Cons:</h3>
                           <li>does not work well with linear data</li>
                           <li>is known to overfit</li>
                           <li>slow training</li>  
-                     
+
                         <h2>Hyper Parameters:</h2>
                         <ul>
                           <li>n_estimators</li>
@@ -256,106 +234,85 @@ This machine learning model was invented by Vladimir N. Vapnik and Alexey Ya. Ch
                           <p>The random forest's results before and after adjusting the parameters were not too different and both were pretty accurate (98% for train, 97% for test). </p>
                       </body>
                           </div>
-                          </div>
-                    </div>
+          </div>
 
                        <!-- Portfolio item 4-->
-                      <!-- Amir: Lasso-->
-                        <div class="col-lg-6 col-md-8 mb-4">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-                                <div class="portfolio-hover">
+               <!-- Amir: Lasso------------------------------------------------------------------>
+                                <!--<div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
+                                </div>-->
+                          <h1>Lasso Regression</h1>
                                 <img class="img-fluid" src="images.png" alt="..." width="500" height="600">
-                            </a>
-                          <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Lasso Regression</div>
+                          <div>
                                 <div class="portfolio-caption-subheading text-muted">Amir Ray</div>
-                        <h2>
-                          LASSO:
-                          </h2
-                          
-<li>Least
-<li>Absolute
-<li>Shrinkage
-<li>Selection
-<Li>Operator
-                         <h2>
-                           History:
-                          </h2>
-                         <p>
-                           Lasso regression was developed independently in geophysics literature in 1986. Statistician Robert Tibshirani independently rediscovered and popularized it in 1996
-                         
-                          <h2>
-                            How it Works:
-                          </h2>
-                          
-                          <p>
-                             Lasso regression is a type of linear regression that is more accurate. This variant of linear regression uses shrinkage, which helps the results become more accurate. This type of regression specializes in models showing high levels of multicollinearity. Lasso regression is also a regularization  technique. This means that the data will most likely not overfitting. This linear regression technique has proven itself to be reliable and accurate
-                          </p>
-                          <h2>
-                             Pros and Cons:
-                          </h2>
-                          <h2>
-                            Pros:
-                          </h2>
-                          <p>
-                              <li> Avoids overfitting
-<li> Can do feature selection
-<li> Is fast when fitting data
+                              <h2>
+                                LASSO:
+                                  </h2>
+                                    <li>Least
+                                    <li>Absolute
+                                    <li>Shrinkage
+                                    <li>Selection
+                                    <Li>Operator
+                               <h2>
+                                 History:
+                                </h2>
+                               <p> Lasso regression was developed independently in geophysics literature in 1986. Statistician Robert Tibshirani independently rediscovered and popularised it in 1996. </p>
 
-                      <h2>
-                        Cons:
-                      </h2>
-                      <p>
-                        <li> The model selected by lasso may be unstable
-                          <li> Lasso may randomly select things
-                            <li> Lasso is automatic which can be bad
-                      </p>
-                      <h2>
-                        Hyper Parameters:
-                          </h2>
-                          <p>
-                            We found that certain parameters increase our accuracy and MSE. Certain combinations proved to be reliable and accurate. The best hyperparameters for lasso are: 
-                          </p>
-                          <p style="color:orange">
-                          Lasso(tol=0.000001, fit_intercept=False, precompute=False, max_iter=100000, warm_start=True, positive=False, copy_X=True, alpha=0.001 )
+                                <h2>
+                                  How it Works:
+                                </h2>
+
+                                <p>Lasso regression is a type of linear regression that is more accurate. This variant of linear regression uses shrinkage, which helps the results become more accurate. This type of regression specializes in models showing high levels of multicollinearity. Lasso regression is also a regularization  technique. This means that the data will most likely not overfitting. This linear regression technique has proven itself to be reliable and accurate.</p>
+                                <h3>
+                                   Pros and Cons:
+                                </h3>
+                                <h2>
+                                  Pros:
+                                </h2>
+                                <p>
+                                    <li> Avoids overfitting
+                                    <li> Can do feature selection
+                                    <li> Is fast when fitting data
+
                             <h2>
-                              Outcome:
-                  </h2>
-                  <p>
-                   <li>Accuracy(Train):   0.999999902536181
-                   <Li>Accuracy(Test):  0.9999998915243217
-                    <li>MSE:  0.7180257402316035
-  </p>
-                           </div>
+                              Cons:
+                            </h2>
+                            <p>
+                              <li> The model selected by lasso may be unstable
+                              <li> Lasso may randomly select things
+                              <li> Lasso is automatic which can be bad
+                            </p>
+                            <h2>Hyper Parameters:</h2>
+                            <p>We found that certain parameters increase our accuracy and MSE. Certain combinations proved to be reliable and accurate. The best hyperparameters for lasso are:</p>
+                                      <p style="color:orange"> Lasso(tol=0.000001, fit_intercept=False, precompute=False, max_iter=100000, warm_start=True, positive=False, copy_X=True, alpha=0.001 )</p>
+                            <h2>Outcome:</h2>
+                              <p>
+                                 <li>Accuracy(Train):   0.999999902536181
+                                 <Li>Accuracy(Test):  0.9999998915243217
+                                 <li>MSE:  0.7180257402316035
+                              </p>
                           </div>
               </div>
-                        <!-- Portfolio item 5-->
+            <!-- Portfolio item 5----------------------------------------------------------------->
                       <!-- Nne Ezi: Linear Regression-->
-                      <div class="col-lg-6 col-md-8 mb-4">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-                                <div class="portfolio-hover">
+                    <h1>Linear Regression</h1>
+                                <!--<div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
+                                </div>-->
                                 <img class="img-fluid" src="linear-regression-in-machine-learning.png" alt="..." width="500" height="600">
-                            </a>
-                          <div class="portfolio-caption">
-                                    <div class="portfolio-caption-heading">Linear Regression</div>
+                          <div>
                                 <div class="portfolio-caption-subheading text-muted"> Nne Ezi</div> 
                             <p>
                               The earliest form of linear regression was the least square method, which was published in 1805 by Legendre.
                             </p>
                               <p>
                             linear regression is a  machine learning model that helps predict a linear relationship between input variables and single output variables. It is the process of finding the best fit line for a data points on a plot.  
-                              </p>
+                              <3>
                             <h2>
   Pros and Cons:
 </h2>
-                            <h2>
-                              Pros: </h2>
+                            <h3>
+                              Pros: </h3>
                             <li>It performs well for linear separable data</li>
                             <li>It is easy to implement, and efficient at training</li>
                            <li>It handles overfitting well</li>
@@ -370,22 +327,24 @@ This machine learning model was invented by Vladimir N. Vapnik and Alexey Ya. Ch
                               Outcome:
                             </h2>
                             <p>
-                              (insert outcome here)
-                            </p>
+                              All the accuracy scores for linear regression came out really high, near perfect, which we found might be too good to be true. It also had very low chance for error.                     </p>
                             </div>
-                        </div>
                     </div>
-               
             </div>
         </section>
-                  <!-- Models Table-->
+        <!-- Models Table-------------------------------------------------------------------->
         <section class="page-section bg-light" id="portfolio">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Machine Learning Models Comparison Table</h2>
-                    <table border="1" class="dataframe">  <thead>    <tr style="text-align: center;">      <th></th>      <th>model</th>      <th>train_accuracy</th>      <th>test_accuracy</th>      <th>Mean_Sqr_Error</th>    </tr>  </thead>  <tbody>    <tr>      <th>0</th>      <td>Decision_Tree_Regression</td>      <td>1.000000</td>      <td>0.832656</td>      <td>42.500000</td>    </tr>    <tr>      <th>1</th>      <td>SVR</td>      <td>0.777679</td>      <td>0.704658</td>      <td>160.367782</td>    </tr>    <tr>      <th>2</th>      <td>Random_Forest</td>      <td>0.991175</td>      <td>0.965884</td>      <td>15.112181</td>    </tr>    <tr>      <th>3</th>      <td>Lasso</td>      <td>0.997535</td>      <td>0.995568</td>      <td>1.824815</td>    </tr>    <tr>      <th>4</th>      <td>Linear_Regression</td>      <td>1.000000</td>      <td>0.999998</td>      <td>0.000727</td>    </tr>  </tbody></table>
+                    <table styke=align: center; border="1" class="dataframe">  <thead>    <tr style="text-align: center;">      <th></th>      <th>model</th>      <th>train_accuracy</th>      <th>test_accuracy</th>      <th>Mean_Sqr_Error</th>    </tr>  </thead>  <tbody>    <tr>      <th>0</th>      <td>Decision_Tree_Regression</td>      <td>1.000000</td>      <td>0.832656</td>      <td>42.500000</td>    </tr>    <tr>      <th>1</th>      <td>SVR</td>      <td>0.777679</td>      <td>0.704658</td>      <td>160.367782</td>    </tr>    <tr>      <th>2</th>      <td>Random_Forest</td>      <td>0.991175</td>      <td>0.965884</td>      <td>15.112181</td>    </tr>    <tr>      <th>3</th>      <td>Lasso</td>      <td>0.997535</td>      <td>0.995568</td>      <td>1.824815</td>    </tr>    <tr>      <th>4</th>      <td>Linear_Regression</td>      <td>1.000000</td>      <td>0.999998</td>      <td>0.000727</td>    </tr>  </tbody></table>
                 </div>
-              </section>
+              <body>
+                <p font size=15>
+                From this table, we can see that linear regression had the best train and test accuracy, as well as the lowest mean squared error score. For this reason, we decided to implement this model for our project.
+              </p>
+              </body>
+        </section>
         <!-- About-->
         <section class="page-section" id="about">
             <div class="container">
@@ -459,7 +418,7 @@ This machine learning model was invented by Vladimir N. Vapnik and Alexey Ya. Ch
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
+                            <img class="mx-auto rounded-circle" src="./images/ritum_singh.jpeg" alt="..." />
                             <h4>Ritum Singh</h4>
                             <p class="text-muted">Group Mentor</p>
                         </div>
@@ -473,7 +432,7 @@ This machine learning model was invented by Vladimir N. Vapnik and Alexey Ya. Ch
                     </div>
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
+                            <img class="mx-auto rounded-circle" src="" alt="..." />
                           <h4>Katherine Xie</h4>
                             <p class="text-muted">Member</p>
                         </div>
@@ -487,7 +446,7 @@ This machine learning model was invented by Vladimir N. Vapnik and Alexey Ya. Ch
                     </div>
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
+                            <img class="mx-auto rounded-circle" src="./images/amir.png " alt="..." />
                           <h4>Amir Ray</h4>
                             <p class="text-muted">Member</p>
                         </div>
@@ -510,16 +469,7 @@ This machine learning model was invented by Vladimir N. Vapnik and Alexey Ya. Ch
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/microsoft.svg" alt="..." aria-label="Microsoft Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/google.svg" alt="..." aria-label="Google Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/facebook.svg" alt="..." aria-label="Facebook Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/ibm.svg" alt="..." aria-label="IBM Logo" /></a>
+
                     </div>
                 </div>
             </div>
