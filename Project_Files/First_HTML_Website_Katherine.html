@@ -1,0 +1,89 @@
+<h1 style="color: blue; text-align:center">
+  Support Vector Regression (SVR)
+</h1>
+<body style="background-image: url('Kath_HTML_Background.jpg');">
+<h3>
+  History:
+</h3>
+<p2>
+This machine learning model was invented by Vladimir N. Vapnik and Alexey Ya. Chervonenkis in 1963
+</p2>
+<h3>
+  How it Works:
+</h3>
+<p>
+  SVR is a supervised machine learning algorithm that can be used for classification and regression. It finds a hyperplane that divides a data set into different classes. The goal for this method would be to choose a plane with the greatest margin between the hyperplane and a data point.
+</p>
+<img src="Svr_example.png" alt="Example of how SVR works" style="width:450px;height:300px;">
+<h3>
+  Pros and Cons:
+</h3>
+<table>
+  <tr>
+    <th>Pros</th>
+    <th>Cons</th> 
+  </tr>
+  <tr>
+    <td>-Thrives in High Dimension</td>
+    <td>-Not good for big datasets because training will take a long time</td> 
+  </tr>
+  <tr>
+    <td>-Support Vector Machines are all about choosing the right kernel with the right parameters and this can provide lots of flexibility</td>
+    <td>-Less effective on messsy data sets with overlapping classe</td>
+    <tr>
+    <td>-Fast Prediction</td>
+    <td>-SVMs are not the most efficient algorithms and it can be quite costly computationally to train them</td> 
+      <tr>
+        <td>-SVMs can be used to both classify data and also predict continuous numerical values</td>
+        <td>-Can be hard to interpret 
+        </td>
+  </tr>
+<tr>
+        <td></td>
+        <td>-Have to scale data 
+        </td>
+  </tr>
+</table>
+<h3>
+  Hyperparameters Used:
+</h3>
+<p>
+  Fine tuning our hyperparameters was essential in order for our model to produce the most optimal results.
+</p>
+<p2>
+  We found that the best hyper parameters were:
+</p2>
+<p3 style="color:red">
+  SVR(kernel='rbf', gamma='scale', tol=0.001, C=100)
+</p3>
+<p4>
+  Scores:
+</p4>
+<p5>
+  <ul>
+    <li>Train Score- 0.9999799773106288</li>
+<li>Test Score- 0.9217180265305381</li>
+<li>Mean Squared Error- 117.1152028382671</li>
+  </ul>
+</p5>
+<h3>
+  Outcome:
+</h3>
+<p>
+  After analyzing the results, 
+</p>
+</body>
+
+
+
+<div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="Svr_example.png" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Support Vector Regression (SVR)</div>
+                                <div class="portfolio-caption-subheading text-muted">Katherine Xie</div>
+                              
